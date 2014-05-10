@@ -1,0 +1,10 @@
+#Files
+.DS_Store
+
+#Folders
+core/
+!core/scss/main.scss
+!core/scss/mobile.scss
+!core/js/main.js
+
+
