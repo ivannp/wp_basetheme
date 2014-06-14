@@ -1,10 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages and that
- * other 'pages' on your WordPress site will use a different template.
+ * Template Name: Full Width Page
  *
  * @package WordPress
  * @subpackage Twenty_Fourteen
@@ -21,9 +17,9 @@ get_header(); ?>
 		get_template_part( 'featured-content' );
 	}
 ?>
+
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
-
 			<?php
 				// Start the Loop.
 				while ( have_posts() ) : the_post();
@@ -37,10 +33,8 @@ get_header(); ?>
 					}
 				endwhile;
 			?>
-
 		</div><!-- #content -->
 	</div><!-- #primary -->
-	<?php get_sidebar( 'content' ); ?>
 </div><!-- #main-content -->
 
 <?php

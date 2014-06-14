@@ -1,69 +1,55 @@
 <?php
 /**
- * The template for displaying header on any page
+ * The Header for our theme
  *
+ * Displays all of the <head> section and everything up till <div id="main">
+ *
+ * @package WP_Base Theme
+ * @since WP_Base Theme 0.1
+ * Text Domain: od14
  */
-?>
-<!doctype html>
-<html <?php language_attributes(); ?> class="no-js">
-	<head>
-		<meta charset="<?php bloginfo('charset'); ?>">
-		<title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
+?><!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" <?php language_attributes(); ?>>
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8) ]><!-->
+<html <?php language_attributes(); ?>>
+<!--<![endif]-->
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title><?php wp_title( '|', true, 'right' ); ?></title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+	<!--[if lt IE 9]>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+	<![endif]-->
+	<?php wp_head(); ?>
+</head>
+<body <?php body_class(); ?>>
+	<div id="site-header">
+		<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
+		</a>
+	</div>
+	<?php endif; ?>
 
-		<link href="//www.google-analytics.com" rel="dns-prefetch">
-        <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
+	<header id="masthead" class="site-header" role="banner">
+		<div class="header-main">
+			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<meta name="description" content="<?php bloginfo('description'); ?>">
+			<div class="search-toggle">
+				<a href="#search-container" class="screen-reader-text"><?php _e( 'Search', 'twentyfourteen' ); ?></a>
+			</div>
 
-        <!--[if lt IE 9]>
-        <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-        <![endif]-->
-
-        <?php wp_head(); ?>
-	</head>
-	<body <?php body_class(); ?>>
-		<!-- wrapper -->
-		<div class="wrapper">
-			<!-- header -->
-			<header class="header clearfix" role="banner">
-					<a class="logo" href="<?php echo home_url(); ?>">
-						<img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" alt="">
-					</a>
-					<div class="hdr-cta-cont">
-						<?php
-							wp_nav_menu(array(
-								'theme_location'  => 'header-menu',
-								'container'       => false,
-								'container_class' => '',
-								'container_id'    => '',
-								'menu_class'      => 'hdr-menu',
-								'menu_id'         => '',
-								'before'          => '',
-								'after'           => '',
-								'depth'           => 1,
-							));
-							dynamic_sidebar('hdr-cta');
-
-						?>
-
-					</div>
-					<!-- nav -->
-					<nav class="nav clearfix" role="navigation">
-						<?php
-							wp_nav_menu(array(
-								'theme_location'  => 'main-menu',
-								'menu_class'      => 'main-menu clearfix',
-								'menu_id'         => '',
-								'before'          => '',
-								'after'           => '',
-								'depth'           => 2,
-							));
-						?>
-					</nav>
-					<!-- /nav -->
-
-			</header>
+			<nav id="primary-navigation" class="site-navigation primary-navigation" role="navigation">
+				<button class="menu-toggle"><?php _e( 'Primary Menu', 'twentyfourteen' ); ?></button>
+				<a class="screen-reader-text skip-link" href="#content"><?php _e( 'Skip to content', 'twentyfourteen' ); ?></a>
+				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+			</nav>
 		</div>
-			<!-- /header -->
+	</header><!-- #masthead -->
+	<div id="main" class="site-main">
