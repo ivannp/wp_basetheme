@@ -6,6 +6,8 @@
  * @since WP_Base Theme 0.1
  * Text Domain: od14
  */
+ 
+add_theme_support( 'post-thumbnails' ); 
 
 function theme_widgets_init() {
 	register_sidebar( array(
