@@ -3605,7 +3605,6 @@ a.post-thumbnail:hover {
 	}
 
 	.main-content {
-		float: left;
 	}
 
 	.site-content {
@@ -3643,10 +3642,8 @@ a.post-thumbnail:hover {
 		background-color: transparent;
 		border: 0;
 		clear: none;
-		float: left;
 		margin: 0 0 0 -100%;
 		min-height: 100vh;
-		width: 122px;
 	}
 
 	.primary-sidebar {
@@ -3971,9 +3968,7 @@ a.post-thumbnail:hover {
 		padding-left: 222px;
 	}
 
-	#secondary {
-		width: 162px;
-	}
+	
 
 	.secondary-navigation,
 	.secondary-navigation ul ul {
