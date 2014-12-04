@@ -35,7 +35,6 @@
 			<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 		</a>
 	</div>
-	<?php endif; ?>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-main">

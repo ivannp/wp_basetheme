@@ -18,13 +18,6 @@ get_header(); ?>
 
 <div id="main-content" class="main-content">
 
-<?php
-	if ( is_front_page() && twentyfourteen_has_featured_posts() ) {
-		// Include the featured content template.
-		get_template_part( 'featured-content' );
-	}
-?>
-
 	<div id="primary" class="content-area">
 		<div id="content" class="site-content" role="main">
 
@@ -42,7 +35,6 @@ get_header(); ?>
 
 				endwhile;
 				// Previous/next post navigation.
-				twentyfourteen_paging_nav();
 
 			else :
 				// If no content, include the "No posts found" template.
