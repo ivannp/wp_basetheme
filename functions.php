@@ -6,7 +6,7 @@
  * @since WP_Base Theme 0.1
  * Text Domain: od14
  */
- 
+
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 add_theme_support( 'post-thumbnails' );
