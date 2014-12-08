@@ -31,7 +31,8 @@
 </head>
 <body <?php body_class(); ?>>
 	<header id="masthead" class="site-header" role="banner">
-		<div class="header-main">
+		<div class="col12 header-main">
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 class="site-desc"><?php echo bloginfo('description'); ?></h2>
 		</div>
 	</header><!-- #masthead -->
