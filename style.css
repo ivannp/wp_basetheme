@@ -159,6 +159,7 @@ html {
 .header-main {
 	display: block;
 	text-align: center;
+	margin: 20px auto;
 }
 .site-title {
 	font-family: 'open_sanssemibold';
@@ -190,6 +191,8 @@ html {
 	left: -15px;
 }
 .blog-roll article {
+	display: inline-block;
+	width: 700px;
 	border-bottom: 1px solid #000;
 	padding-bottom: 15px;
 	margin-bottom: 15px;
@@ -198,7 +201,13 @@ html {
 	border-bottom: none;
 	padding-bottom: 0;
 }
-
+h1, h2, h3 {
+	font-family: 'open_sanssemibold';
+}
+article h1, article h2, article h3 {
+	font-family: 'open_sanssemibold';
+	margin-bottom: 20px;
+}
 article h1 {
 	font-family: 'open_sanssemibold';
 	font-size: 26px;
@@ -206,6 +215,12 @@ article h1 {
 article h1 a {
 	color: #000;
 	text-decoration: none;
+}
+article h2 {
+	font-size: 22px;
+}
+article h3 {
+	font-size: 18px;
 }
 article a {
 	font-family: 'open_sansregular';
@@ -215,12 +230,20 @@ article a {
 article a:hover {
 	text-decoration: underline;
 }
-article p {
+article p, article li {
 	font-family: 'open_sansregular';
 	font-size: 16px;
 	color: #000;
 	line-height: 1.6;
-	margin-bottom: 24px;
+	margin-bottom: 20px;
+}
+article ul {
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+article li {
+	margin-bottom: 5px;
+	font-size: 15px;
 }
 .readmore {
 	font-size: 14px;
@@ -238,11 +261,19 @@ article p {
 }
 
 .comments-area {
+	width: 700px;
 	font-family: 'open_sansregular';
 	font-size: 16px;
 	color: #000;
 }
-
+.comment-reply-title {
+	font-size: 20px;
+	margin-bottom: 5px;
+}
+.comment-notes {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
 .comments-area label {
 	display: inline-block;
 	vertical-align: top;
@@ -256,9 +287,35 @@ span.required {
 .comments-area input, .comments-area textarea {
 	border: 1px solid #000;
 	padding: 5px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 .comments-area input {
 		border: 1px solid #000;
 		padding: 5px;
+}
+.comments-area .form-submit {
+	padding-left: 115px;
+}
+.comments-area li { list-style: none; }
+.comment {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.comment-author { margin-bottom: 5px; }
+.comment-meta { margin-bottom: 10px; }
+.comment-meta a, .reply a {
+	color: #000;
+	text-decoration: none;
+}
+.reply {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.children {
+	margin: 20px 0 20px 30px;
+}
+.comment-body p {
+	padding: 10px;
+	border: 1px solid #000;
+	margin-bottom: 20px;
 }
