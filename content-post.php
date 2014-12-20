@@ -34,6 +34,6 @@
             }
             //the_excerpt();
         ?>
-        <a class="readmore" href="<?php echo get_permalink(); ?>">Read More >>></a>
+        <a class="readmore" href="<?php echo get_permalink(); ?>">Read More</a>
     </div><!-- .entry-summary -->
 </article><!-- #post-## -->
