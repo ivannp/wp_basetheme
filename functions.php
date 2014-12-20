@@ -13,13 +13,13 @@ add_theme_support( 'post-thumbnails' );
 
 function theme_widgets_init() {
     register_sidebar( array(
-        'name'          => 'Top header links',
-        'id'            => 'header-links',
-        'description'   => 'Will appear on top of header',
-        'before_widget' => '<div class="header-top links col12">',
+        'name'          => 'Side Categories Links',
+        'id'            => 'sidebar-cat',
+        'description'   => 'Will Appear on The Left Side',
+        'before_widget' => '<div class="categories_wrapper">',
         'after_widget'  => '</div>',
-        'before_title'  => '',
-        'after_title'   => '',
+        'before_title'  => '<span class="title">',
+        'after_title'   => '</span>',
     ) );
     register_sidebar( array(
         'name'          => 'Homepage Conversion Pods',
