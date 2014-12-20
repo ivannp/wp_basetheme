@@ -167,14 +167,13 @@ a:hover {
 .header-main {
 	display: block;
 	text-align: center;
-	margin: 20px auto;
+	margin: 20px auto 50px;
 }
 .site-title {
-	font-family: 'open_sanssemibold';
-	color: #000;
 	text-transform: uppercase;
 }
 .site-title a {
+    font-family: 'open_sansbold';
 	text-decoration: none;
 	font-size: 40px;
 	color: #000;
@@ -250,13 +249,15 @@ article li {
     display: inline-block;
     background-color: #00C7FF;
     color: #fff;
-    padding: 8px 10px;
+    padding: 8px 15px;
     border-radius: 3px;
     text-align: center;
 	font-size: 14px;
+    border: 1px solid #fff;
 }
 .readmore:hover {
     border: 1px solid #333;
+    text-decoration: none;
 }
 .dateAuthors {
 	display: block;
@@ -324,4 +325,31 @@ span.required {
 	padding: 10px;
 	border: 1px solid #000;
 	margin-bottom: 20px;
+}
+.navigation {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.wp-paginate .page {
+    background-color: transparent;
+    color: #444;
+    padding: 7px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+}
+.wp-paginate .page.current, .wp-paginate .page:hover {
+    background-color: #00C7FF;
+    color: #fff;
+}
+.wp-paginate .next, .wp-paginate .prev {
+    background-color: #444;
+    color: #fff;
+    padding: 7px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 14px;
+    border: none;
 }
