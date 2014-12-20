@@ -339,10 +339,13 @@ span.required {
     text-align: center;
     font-size: 14px;
     border: none;
+    font-family: 'open_sansregular';
 }
-.wp-paginate .page.current, .wp-paginate .page:hover {
+.wp-paginate .page.current, .wp-paginate .page:hover  {
     background-color: #00C7FF;
     color: #fff;
+    padding: 7px;
+    border:none;
 }
 .wp-paginate .next, .wp-paginate .prev {
     background-color: #444;
