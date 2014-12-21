@@ -166,3 +166,6 @@ function get_parent_menu_item($post){
         }
     }
 }
+
+
+require_once('widget-cat.php');
