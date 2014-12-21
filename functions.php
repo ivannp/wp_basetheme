@@ -118,8 +118,6 @@ function register_menus(){
 
 add_action( 'after_setup_theme', 'register_menus');
 
-if (!function_exists(custom_the_excerpt)):
-
 function custom_the_excerpt($post, $length, $end_char = '&#8230;',$tags = null) {
 	if(!empty($post->post_excerpt)){
 		$excerpt = preg_replace("/\n/", "</p>\n\n<p>", $post->post_excerpt);
@@ -131,8 +129,6 @@ function custom_the_excerpt($post, $length, $end_char = '&#8230;',$tags = null) 
 		echo ($tags?wpautop($matches[0]):"<p>$matches[0]</p>");
 	}
 }
-
-endif;
 
 function get_parent_menu_item($post){
     $menus = get_nav_menu_locations();

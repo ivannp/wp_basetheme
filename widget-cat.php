@@ -24,7 +24,9 @@ class Category_Menu extends WP_Widget {
         
     }
 }
+
+function register_cat_widget() {
+    register_widget('Category_Menu');
+}
     
-add_action('widget_init', function() {
-    register_widget('Category_Menu'); 
-});
+add_action('widgets_init', 'register_cat_widget');
