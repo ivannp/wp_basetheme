@@ -187,19 +187,19 @@ a:hover {
 .site-content {
 	position: relative;
 }
-.site-content::before {
-	content: '';
-	display: block;
-	position: absolute;
-	width: 1px;
-	height: 95%;
-	border-left: 1px dotted #000;
-	top: 5px;
-	left: -15px;
+.blog-roll, .sidebar {
+    display: inline-block;
+    vertical-align: top;
+}
+.sidebar {
+    width: 230px;
+    padding-right: 20px;
+}
+.blog-roll {
+    width: 740px;
 }
 .blog-roll article {
 	display: inline-block;
-	width: 700px;
 	border-bottom: 1px solid #000;
 	padding-bottom: 15px;
 	margin-bottom: 15px;
@@ -221,7 +221,7 @@ article h1 {
 }
 article h1 a {
     font-family: 'open_sansbold';
-	color: #000;
+	color: #444;
 	text-decoration: none;
 }
 article h2 {
@@ -233,7 +233,7 @@ article h3 {
 article p, article li {
 	font-family: 'open_sansregular';
 	font-size: 16px;
-	color: #000;
+	color: #444;
 	line-height: 1.6;
 	margin-bottom: 20px;
 }
@@ -325,6 +325,16 @@ span.required {
 	padding: 10px;
 	border: 1px solid #000;
 	margin-bottom: 20px;
+}
+.categories_wrapper {
+    display: block;
+    margin-bottom: 20px;
+}
+.categories_wrapper span.title {
+    display: block;
+    font-family: 'open_sansbold';
+    font-size:22px;
+    color: #444;
 }
 .navigation {
     display: block;
