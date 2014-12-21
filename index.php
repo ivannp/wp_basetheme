@@ -16,7 +16,7 @@
 
 get_header(); ?>
 <div id="main-content" class="col12 main-content">
-    <?php dynamic_sidebar('categories'); ?>
+    <?php get_sidebar('categories'); ?>
 	<div id="content" class="site-content blog-roll" role="main">
 		<?php
 			if ( have_posts() ) :
