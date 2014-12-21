@@ -200,9 +200,9 @@ a:hover {
 }
 .blog-roll article {
 	display: inline-block;
-	border-bottom: 1px solid #000;
-	padding-bottom: 15px;
-	margin-bottom: 15px;
+	border-bottom: 5px solid #f4f4f4;
+	padding-bottom: 35px;
+	margin-bottom: 35px;
 }
 .blog-roll article.last {
 	border-bottom: none;
