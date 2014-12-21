@@ -186,8 +186,9 @@ a:hover {
 }
 .site-content {
 	position: relative;
+    width: 740px;
 }
-.blog-roll, .sidebar {
+.site-content, .sidebar {
     display: inline-block;
     vertical-align: top;
 }
@@ -195,8 +196,7 @@ a:hover {
     width: 230px;
     padding-right: 20px;
 }
-.blog-roll {
-    width: 740px;
+.blog-roll {   
 }
 .blog-roll article {
 	display: inline-block;
@@ -266,7 +266,6 @@ article li {
 	font-size: 14px;
 	color: #000;
 }
-
 .comments-area {
 	width: 700px;
 	font-family: 'open_sansregular';
@@ -328,7 +327,7 @@ span.required {
 }
 .categories_wrapper {
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .categories_wrapper span.title {
     display: block;
@@ -336,6 +335,22 @@ span.required {
     font-size:22px;
     color: #444;
 }
+.categories_wrapper .menu {
+    list-style: none;
+    margin-top: 15px;
+}
+.categories_wrapper .menu-item a {
+    display: block;
+    line-height: 2;
+    font-size: 20px;
+    color: #999;
+    padding-left: 10px;
+}
+.categories_wrapper .menu-item a:hover {
+    background: #FAFAFA;
+    text-decoration: none;
+}
+
 .navigation {
     display: block;
     margin-top: 20px;

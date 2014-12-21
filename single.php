@@ -9,7 +9,7 @@
 
 get_header(); ?>
 <div id="main-content" class="col12 main-content">
-	<div id="content" class="site-content blog-roll" role="main">
+	<div id="content" class="site-content blog-post" role="main">
 		<?php
             while ( have_posts() ) : the_post();
                 get_template_part( 'content', get_post_format() );

@@ -8,7 +8,7 @@ class Category_Menu extends WP_Widget {
             'Category Menu',
             array('description' => '')
         );
-    
+        
     }
     
     public function widget ($args, $instance) {

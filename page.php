@@ -13,7 +13,8 @@
 
 get_header(); ?>
 <div id="main-content" class="col12 main-content">
-	<div id="content" class="site-content blog-roll" role="main">
+    <?php get_sidebar('categories'); ?>
+	<div id="content" class="site-content single-post" role="main">
 		<?php
             while ( have_posts() ) : the_post();
                 get_template_part( 'content', get_post_format() );
