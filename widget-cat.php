@@ -2,11 +2,13 @@
 
 class Category_Menu extens WP_Widget {
     
-    public function __construct() {
-        parent::__construct() {
-            parent::_construct('Category_Menu',
-                               'Category Menu',
-                               array('description' => 'Allows you to select categories from a drop down for menu');
+    function __construct() {
+        parent::__construct(
+            'category_menu',
+            'Category Menu',
+            array('description' => '')
+        );
+    
     }
     
     public function widget ($args, $instance) {
@@ -21,7 +23,8 @@ class Category_Menu extens WP_Widget {
         
         
     }
+}
     
-    add_action('widget_init', function() {
-        register_widget('Custom_Cat'); 
-    });
+add_action('widget_init', function() {
+    register_widget('Category_Menu'); 
+});
