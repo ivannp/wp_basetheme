@@ -9,6 +9,7 @@
 
 get_header(); ?>
 <div id="main-content" class="col12 main-content">
+    <?php get_sidebar('categories'); ?>
 	<div id="content" class="site-content blog-post" role="main">
 		<?php
             while ( have_posts() ) : the_post();
