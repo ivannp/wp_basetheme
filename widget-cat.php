@@ -1,6 +1,6 @@
 <?php
 
-class Category_Menu extens WP_Widget {
+class Category_Menu extends WP_Widget {
     
     function __construct() {
         parent::__construct(
