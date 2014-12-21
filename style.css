@@ -295,6 +295,7 @@ span.required {
 	border: 1px solid #C1C1C1;
 	padding: 5px;
 	margin-bottom: 20px;
+    border-radius: 2px;
 }
 .comments-area input {
 		border: 1px solid #C1C1C1;
