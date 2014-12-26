@@ -179,6 +179,10 @@ a:hover {
 	color: #000;
 }
 
+.entry-header a:hover {
+    text-decoration: none;
+}
+
 .site-desc {
 	font-family: 'open_sansregular';
 	font-size: 12px;
