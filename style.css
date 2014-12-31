@@ -405,6 +405,7 @@ span.required {
     font-family: 'open_sansbold';
     font-size:18px;
     color: #444;
+    text-align: left;
     padding-bottom: 5px;
     border-bottom: 1px solid #f4f4f4;
 }
