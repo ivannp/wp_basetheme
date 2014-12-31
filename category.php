@@ -14,10 +14,10 @@ get_header(); ?>
     <?php get_sidebar('categories'); ?>
 	<div id="content" class="site-content blog-roll" role="main">
 		<?php
+			echo '<h1 class="archive-title">Category Archives: '.single_cat_title( '', false ).'</h1>';
 			if ( have_posts() ) :
                 while ( have_posts() ) : the_post();
-            		echo '<h1 class="archive-title">Category Archives: '.single_cat_title( '', false ).'</h1>';
-                    get_template_part( 'content', 'post' );
+            		get_template_part( 'content', 'post' );
                 endwhile;
                 if(function_exists('wp_paginate')) { wp_paginate(); }
             endif;
