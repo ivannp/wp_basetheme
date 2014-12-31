@@ -407,8 +407,10 @@ span.required {
     }
     .sidebar {
         width: 20%;
+        padding-left: 20px;
     }
     .site-content {
-        width: 80%
+        width: 79%;
+        padding-right: 20px;
     }
 }
