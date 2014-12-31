@@ -30,10 +30,10 @@
             if ($f_image) {
                 the_excerpt();
             } else {
-                custom_the_excerpt($post,120,'...');
+                // custom_the_excerpt($post,120,'...');
+                the_content();
             }
             //the_excerpt();
         ?>
-        <a class="readmore" href="<?php echo get_permalink(); ?>">Read More</a>
     </div><!-- .entry-summary -->
 </article><!-- #post-## -->
