@@ -398,6 +398,21 @@ span.required {
     border: none;
 }
 
+.entry-content table {
+    margin: 20px auto;
+}
+.entry-content table th {
+    font-family: 'open_sansbold';
+    font-size:18px;
+    color: #444;
+    padding-bottom: 5px;
+}
+.entry-content table td {
+    font-family: 'open_sansregular';
+    font-size:16px;
+    color: #444;
+}
+
 @media all and (max-width: 1000px){
     .col12 {
         width: 100%;
