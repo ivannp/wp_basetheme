@@ -413,6 +413,9 @@ span.required {
         width: 79%;
         padding-right: 20px;
     }
+    .comments-area {
+        width: 100%;
+    }
 }
 
 @media all and (max-width: 650px) {
