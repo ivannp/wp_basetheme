@@ -393,3 +393,19 @@ span.required {
     font-size: 14px;
     border: none;
 }
+
+
+@media all and (max-width: 1000px){
+    .col12 {
+        width: 100%;
+    }
+    .sidebar, .site-content {
+        box-sizing: border-box;
+    }
+    .sidebar {
+        width: 20%;
+    }
+    .site-content {
+        width: 80%
+    }
+}
