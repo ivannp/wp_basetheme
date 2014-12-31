@@ -179,6 +179,10 @@ a:hover {
 	color: #000;
 }
 
+.entry-header a:hover {
+    text-decoration: none;
+}
+
 .site-desc {
 	font-family: 'open_sansregular';
 	font-size: 12px;
@@ -393,7 +397,6 @@ span.required {
     font-size: 14px;
     border: none;
 }
-
 
 @media all and (max-width: 1000px){
     .col12 {
