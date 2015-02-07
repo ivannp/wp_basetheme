@@ -14,7 +14,18 @@
 			<?php //get_sidebar( 'footer' ); ?>
 		</footer><!-- #colophon -->
 	</div><!-- #page -->
-
+	</div><!-- m-wrap -->
 	<?php wp_footer(); ?>
+<script>
+jQuery(document).ready(function($) {
+
+$('#mobile-nav').on('click', function() {
+ $('body').toggleClass('nav-active');
+
+});
+
+});
+
+</script>
 </body>
 </html>
