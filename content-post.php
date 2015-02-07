@@ -16,7 +16,13 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class($class); ?>>
     <header class="entry-header">
         <?php 	the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?>
-        <span class="dateAuthors"><?php the_date('F j, Y');?> BY <span class="author"><?php the_author(); ?></span> |  <?php if ( comments_open() ) comments_popup_link('Leave a response'); ?></span>
+        <div class="post-meta-data">
+           <?php
+               $today_date = the_date('Y-m-d','','',FALSE);
+               echo '<time class="date-pmd" datetime="'.$today_date.'" title="'.$today_date.'">'.$today_date.'</time>';
+               // echo '<time class="dateAuthors" datetime="2015-01-25" title="2015-01-25">2015-01-25</time>';
+           ?>
+        </div>
     </header><!-- .entry-header -->
     <?php
         $f_image = NULL;

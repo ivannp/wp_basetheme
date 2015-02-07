@@ -149,7 +149,7 @@ html {
 a {
     font-family: 'open_sansregular';
 	text-decoration: none;
-    color: #00C7FF;
+    color: #2361A1;
 }
 a:hover {
     text-decoration: underline;
@@ -170,23 +170,29 @@ a:hover {
 	margin: 20px auto 50px;
 }
 .site-title {
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
+   text-shadow: 2px 1px #ddd;
 }
 .site-title a {
     font-family: 'open_sansbold';
 	text-decoration: none;
-	font-size: 40px;
-	color: #000;
+	font-size: 30px;
+   color: #ED4C11;
 }
 
 .entry-header a:hover {
     text-decoration: none;
 }
 
+.entry-title {
+	 margin-bottom: 10px;
+}
+
 .site-desc {
 	font-family: 'open_sansregular';
 	font-size: 12px;
 	word-spacing: 4px;
+   color: #657B83;
 }
 .site-content {
 	position: relative;
@@ -204,9 +210,9 @@ a:hover {
 }
 .blog-roll article {
 	display: inline-block;
-	border-bottom: 5px solid #f4f4f4;
-	padding-bottom: 35px;
-	margin-bottom: 35px;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 21px;
+	margin-bottom: 21px;
 }
 .blog-roll article.last {
 	border-bottom: none;
@@ -250,25 +256,40 @@ article li {
 	font-size: 15px;
 }
 .readmore {
-    display: inline-block;
-    background-color: #00C7FF;
-    color: #fff;
-    padding: 8px 15px;
-    border-radius: 3px;
-    text-align: center;
+   display: inline-block;
+   background-color: #00C7FF;
+   color: #fff;
+   padding: 8px 15px;
+   border-radius: 3px;
+   text-align: center;
 	font-size: 14px;
-    border: 1px solid #fff;
+   border: 1px solid #fff;
 }
 .readmore:hover {
     border: 1px solid #333;
     text-decoration: none;
 }
+.readmore-light {
+}
+.date-pmd {
+	display: block;
+	margin-bottom: 20px;
+	font-family: 'open_sanslight';
+	font-size: 12px;
+	color: #666;
+}
+.date-pmd:before {
+   content: '\f469';
+	font-family: 'dashicons';
+	margin-right: 6px;
+	color: #2361A1;
+}
 .dateAuthors {
 	display: block;
 	margin-bottom: 20px;
 	font-family: 'open_sanslight';
-	font-size: 14px;
-	color: #000;
+	font-size: 12px;
+	color: #666;
 }
 .comments-area {
 	width: 700px;
@@ -368,30 +389,39 @@ span.required {
 }
 
 .navigation {
+    text-align: center;
     display: block;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .wp-paginate .page {
+    /*
     background-color: transparent;
     color: #444;
     padding: 7px;
     border-radius: 3px;
+    */
+    background-color: transparent;
     text-align: center;
     font-size: 14px;
     border: none;
     font-family: 'open_sansregular';
 }
 .wp-paginate .page.current, .wp-paginate .page:hover  {
+    /*
     background-color: #00C7FF;
     color: #fff;
     padding: 7px;
+    */
     border:none;
 }
 .wp-paginate .next, .wp-paginate .prev {
+    /*
     background-color: #444;
     color: #fff;
     padding: 7px;
+    */
+    background-color: transparent;
     border-radius: 3px;
     text-align: center;
     font-size: 14px;
@@ -451,3 +481,6 @@ span.required {
         padding-left: 20px;
     }
 }
+
+.syntaxhighlighter .line, .syntaxhighlighter table caption, .syntaxhighlighter .line { font-size: 12px !important; height: 13px !important; }
+

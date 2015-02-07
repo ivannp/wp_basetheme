@@ -168,5 +168,5 @@ require_once('widget-cat.php');
 
 add_filter('the_content_more_link', 'quintuitive_content_more_link');
 function quintuitive_content_more_link() {
-   return '<a class="readmore" href="' . get_permalink() . '">Read More</a>';
+   return '<a class="readmore-light" href="' . get_permalink() . '">Read More</a>';
 }
