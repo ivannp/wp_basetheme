@@ -369,22 +369,31 @@ span.required {
     display: block;
     margin-bottom: 40px;
 }
-.categories_wrapper span.title {
+.categories_wrapper .menu-item a {
     display: block;
     font-family: 'open_sansbold';
     font-size:22px;
     color: #444;
+	padding-left: 15px;
 }
 .categories_wrapper .menu {
     list-style: none;
     margin-top: 15px;
 }
-.categories_wrapper .menu-item a {
+.categories_wrapper .menu-item {
+	margin-bottom: 10px;
+}
+.categories_wrapper .sub-menu .menu-item {
+	list-style: none;
+	margin-bottom: 0;
+	margin-left: 15px;
+}
+.categories_wrapper .sub-menu .menu-item a {
     display: block;
     line-height: 2;
+	font-family: 'open_sansregular';
     font-size: 20px;
     color: #999;
-    padding-left: 10px;
 }
 .categories_wrapper .menu-item a:hover {
     background: #FAFAFA;
