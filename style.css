@@ -169,8 +169,8 @@ a:hover {
 
 .header-main {
 	display: block;
-	text-align: center;
-	margin: 20px auto 50px;
+	text-align: left;
+	margin: 20px auto 50px 250px;
 }
 .site-title {
 	/*text-transform: uppercase;*/
@@ -195,6 +195,7 @@ a:hover {
 	font-family: 'open_sansregular';
 	font-size: 12px;
 	word-spacing: 4px;
+   margin-left: 2px;
    color: #657B83;
 }
 .site-content {
@@ -542,3 +543,21 @@ span.required {
 
 .syntaxhighlighter .line, .syntaxhighlighter table caption, .syntaxhighlighter .line { font-size: 12px !important; height: 13px !important; }
 
+.msallocs thead th {
+   background-color: inherit !important;
+   color: #2361a1 !important;
+   border-bottom: 1px solid #2361a1 !important;
+}
+
+.msallocs th,td {
+   padding: 6px !important;
+}
+
+.msallocs {
+   width: 50% !important;
+}
+
+.msallocs td:nth-child(2),
+.msallocs th:nth-child(2) {
+   text-align: center;
+}

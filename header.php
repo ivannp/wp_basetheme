@@ -32,9 +32,11 @@
 <body <?php body_class(); ?>>
 	<div class="m-wrap">
 	<header id="masthead" class="site-header" role="banner">
-		<a href="#" id="mobile-nav">Mobile Nav</a>
-		<div class="col12 header-main">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-desc"><?php echo bloginfo('description'); ?></h2>
-		</div>
+      <a href="#" id="mobile-nav">Mobile Nav</a>
+      <div class="col12">
+      <div class=" header-main">
+         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+         <h2 class="site-desc"><?php echo bloginfo('description'); ?></h2>
+      </div>
+      </div>
 	</header><!-- #masthead -->

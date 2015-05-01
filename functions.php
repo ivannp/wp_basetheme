@@ -107,6 +107,7 @@ add_action( 'widgets_init', 'theme_widgets_init' );
 
 function theme_scripts() {
 	wp_enqueue_style( 'theme_style', get_stylesheet_uri(), array() );
+   wp_enqueue_style('dashicons');
 	//wp_enqueue_script('theme_script', get_template_directory_uri().'/js/herjavec.min.js',array('jquery','sticky'),'2014',true);
 }
 add_action( 'wp_enqueue_scripts', 'theme_scripts' );
@@ -162,7 +163,6 @@ function get_parent_menu_item($post){
         }
     }
 }
-
 
 require_once('widget-cat.php');
 
