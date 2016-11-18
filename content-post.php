@@ -18,7 +18,7 @@
         <?php 	the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' ); ?>
         <div class="post-meta-data">
            <?php
-               $today_date = the_date('Y-m-d','','',FALSE);
+               $today_date = get_the_date('Y-m-d');
                echo '<time class="date-pmd" datetime="'.$today_date.'" title="'.$today_date.'">'.$today_date.'</time>';
                // echo '<time class="dateAuthors" datetime="2015-01-25" title="2015-01-25">2015-01-25</time>';
            ?>
@@ -34,7 +34,8 @@
     <div class="entry-summary">
         <?php
             if ($f_image) {
-                the_excerpt();
+                the_content();
+                // the_excerpt();
             } else {
                 // custom_the_excerpt($post,120,'...');
                 the_content();

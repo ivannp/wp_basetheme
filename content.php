@@ -23,8 +23,11 @@
 		?>
 
 		<div class="entry-meta">
-
-			<span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyfourteen' ), __( '1 Comment', 'twentyfourteen' ), __( '% Comments', 'twentyfourteen' ) ); ?></span>
+         <?php
+            $today_date = get_the_date('Y-m-d');
+            echo '<time class="date-pmd" datetime="'.$today_date.'" title="'.$today_date.'">'.$today_date.'</time>';
+         ?>
+			<!-- span class="comments-link"><?php comments_popup_link( __( 'Leave a comment', 'twentyfourteen' ), __( '1 Comment', 'twentyfourteen' ), __( '% Comments', 'twentyfourteen' ) ); ?></span -->
 
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->

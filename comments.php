@@ -27,15 +27,20 @@ if ( post_password_required() )
 
     <?php if ( have_comments() ) : ?>
         <h2 class="comments-title">
+            Comments
+            <!--
             <?php
             printf( _n( 'One Response(s) for &ldquo;%2$s&rdquo;', '%1$s Response(s) for &ldquo;%2$s&rdquo;', get_comments_number(), 'twentytwelve' ),
                 number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' );
-            ?>
+            ?>-->
         </h2>
 
-        <li class="commentlist">
-            <?php wp_list_comments( array( 'style' => 'ol' ) ); ?>
-        </li><!-- .commentlist -->
+        <ol class="comment-list">
+            <?php wp_list_comments(array('style' => 'ol',
+                                          'avatar_size' => 48,
+                                          'type' => 'comment'));
+            ?>
+        </ol><!-- .commentlist -->
 
         <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
             <nav id="comment-nav-below" class="navigation" role="navigation">

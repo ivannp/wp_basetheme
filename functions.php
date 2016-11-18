@@ -22,42 +22,6 @@ function theme_widgets_init() {
         'after_title'   => '</span>',
     ) );
     register_sidebar( array(
-        'name'          => 'Homepage Conversion Pods',
-        'id'            => 'hp-pods',
-        'description'   => 'Will appear bellow banner on Homepage',
-        'before_widget' => '<div id="%1$s" class="hp-pod %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '',
-        'after_title'   => '',
-    ) );
-    register_sidebar( array(
-        'name'          => 'Homepage CTA',
-        'id'            => 'hp-cta',
-        'description'   => 'Will appear bellow home page pods on Homepage',
-        'before_widget' => '<div id="%1$s" class="hp-cta %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '',
-        'after_title'   => '',
-    ) );
-    register_sidebar( array(
-        'name'          => 'Homepage Video ',
-        'id'            => 'hp-video',
-        'description'   => 'Will appear bellow home page cta on Homepage',
-        'before_widget' => '<div id="%1$s" class="col12 hp-video %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '',
-        'after_title'   => '',
-    ) );
-    register_sidebar( array(
-        'name'          => 'Homepage Threat Map',
-        'id'            => 'hp-map',
-        'description'   => 'Will appear bellow home page cta on Homepage',
-        'before_widget' => '<div id="%1$s" class="col12 hp-map %2$s">',
-        'after_widget'  => '</div>',
-        'before_title'  => '',
-        'after_title'   => '',
-    ) );
-	register_sidebar( array(
 		'name'          => 'Page Sidebar',
 		'id'            => 'sidebar-page',
 		'description'   => 'Page sidebar',
@@ -163,6 +127,11 @@ function get_parent_menu_item($post){
         }
     }
 }
+
+function quintuitive_comment_div($content) {
+   return "<div class=\"comment-content\">" . $content . "</div>";
+}
+add_filter('comment_text', 'quintuitive_comment_div', 1000);
 
 require_once('widget-cat.php');
 
